@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netherlands Tourist Destination Suggester</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to CSS -->
+</head>
+<body>
+    <h1>Find Your Perfect Dutch Tourist Destination</h1>
+    
+    <form id="tourist-form">
+        <label for="climate">Preferred Climate:</label>
+        <select id="climate">
+            <option value="warm">Warm</option>
+            <option value="cold">Cold</option>
+            <option value="moderate">Moderate</option>
+        </select>
+        
+        <label for="destinationType">Type of Destination:</label>
+        <select id="destinationType">
+            <option value="beach">Beach</option>
+            <option value="mountain">Mountain (or hilly)</option>
+            <option value="city">City</option>
+            <option value="nature">Nature Reserve</option>
+        </select>
+
+        <label for="budget">Budget:</label>
+        <select id="budget">
+            <option value="low">Low</option>
+            <option value="medium">Medium</option>
+            <option value="high">High</option>
+        </select>
+
+        <label for="activities">Favorite Activities:</label>
+        <input type="checkbox" id="adventure" name="activities" value="adventure"> Adventure
+        <input type="checkbox" id="relaxation" name="activities" value="relaxation"> Relaxation
+        <input type="checkbox" id="cultural" name="activities" value="cultural"> Cultural Experiences
+        <input type="checkbox" id="nightlife" name="activities" value="nightlife"> Nightlife
+
+        <label for="duration">Duration of Stay:</label>
+        <input type="number" id="duration" name="duration" min="1" max="30" placeholder="Number of days">
+
+        <label for="travelingWith">Traveling With:</label>
+        <select id="travelingWith">
+            <option value="solo">Solo</option>
+            <option value="couple">Couple</option>
+            <option value="family">Family</option>
+        </select>
+
+        <button type="submit">Get Recommendation</button>
+    </form>
+
+    <div id="result"></div>
+
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
